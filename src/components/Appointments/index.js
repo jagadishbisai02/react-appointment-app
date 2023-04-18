@@ -49,7 +49,7 @@ class Appointments extends Component {
     }
 
     this.setState(prevState => ({
-      appointmentsList: {...prevState.appointmentsList, newAppointment},
+      appointmentsList: [...prevState.appointmentsList, newAppointment],
       titleInput: '',
       dateInput: '',
     }))
